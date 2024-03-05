@@ -1,0 +1,33 @@
+
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a{
+    display: block;
+    background-color: rgb(140, 18, 18);
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* ::-webkit-scrollbar é usado para estilizar a barra de rolagem, nesse caso para preencher todo espaço da img sem a barra */
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+img {
+    width: 100vw;
+}
+
+a:hover {
+    background-color: red;
+}

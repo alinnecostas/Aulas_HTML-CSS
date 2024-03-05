@@ -1,0 +1,186 @@
+
+@font-face {
+    font-family: 'android';
+    src: url(idroid.otf);
+}
+
+body {
+    background-color: rgb(132, 225, 173);
+}
+
+header{
+    background-image: linear-gradient( to top, rgb(29, 103, 61), rgb(57, 205, 124));
+    height: 13em;
+    padding: 5px;
+    margin: -10px;
+    width: auto;
+    margin-bottom: 1px;
+    text-align: justify;
+} 
+
+header > h1 {
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 29px;
+    color: rgba(255, 255, 255, 0.936);
+    text-shadow: 0.0em 0.1em 0.0em rgba(0, 0, 0, 0.667);
+    margin-bottom: 35px;
+    
+
+}
+
+header > h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(240, 245, 238, 0.753);
+    text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.665);
+    margin-bottom: 40px;
+    
+
+}
+
+header > nav {
+    margin-top: auto;
+ }
+
+
+header > nav > a {
+    text-decoration: none; 
+    color: rgb(240, 248, 231);
+    margin-right: 30px;
+    margin-bottom: 150px;
+     
+ }
+
+header > nav > :hover {
+   text-decoration: underline;
+   color: rgb(14, 94, 68);
+   background-color: aliceblue;
+   padding: 10px;
+}
+
+main {
+    background-color: aliceblue;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 18px;
+    box-shadow: 0.1em 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.254);
+ }
+
+main > h1, h2 {
+    font-family: android;
+    color: rgb(12, 99, 70);
+    padding: 18px;
+
+}
+
+main > h2 {
+    background-image: linear-gradient(to right, rgba(51, 186, 121, 0.336), white);
+    padding: 18px;
+
+}
+
+main > p {
+    text-align: justify;
+        padding: 18px;
+
+}
+
+main > img {
+    margin: auto;
+    display: block;
+}
+
+.video {
+    background-color: rgb(12, 71, 47);
+    display: block;
+    text-align: center;
+
+    
+ }
+
+ article {
+    background-color: white;
+    margin-left: 125px;
+    margin-right: 125px;
+    box-shadow: 0.1em 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.186);
+    padding: 18px;
+
+
+ }
+  
+ article > aside {
+
+    background-color: rgba(201, 247, 221, 0.961);
+    margin-top: -22px;
+    border-radius:30px;
+    height: 430px;
+    box-shadow: 0.1em 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.129);
+    
+
+}
+
+ article > aside > h4 {
+    background-color: rgba(30, 177, 93, 0.859);
+    border-radius:10px 10px 0px 0px;
+    height: 10px;
+    padding: 10px;
+    color: aliceblue;
+   
+ }
+
+ article > aside > p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: auto;
+    padding: 18px;
+
+ }
+
+ div > ul{
+    margin-left: 15px;
+    text-shadow: 0.2em 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.838);
+    text-decoration: underline;
+ 
+ }
+
+
+div {
+    column-count:2;
+}
+
+article > section > p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: auto;
+    padding: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(57, 127, 93);
+    text-shadow: 0.0em 0.1em 0.1em rgba(0, 0, 0, 0.725);
+    font-family:'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+footer {
+    background-color: rgb(15, 81, 45);
+    width: 100%;    
+    bottom: 0px;
+    padding-bottom: 2px;
+    height: 40px;  
+ 
+ }
+
+ footer > p {
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    height: 10px;
+    bottom: -2px;
+ }
