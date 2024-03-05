@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /*elemento box-level*/
+        background-color: rgb(240, 120, 208);
+        height: 300px;
+        width: 300px;
+
+        /* SIMPLIFICANDO
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgb(129, 6, 205);
+        SIMPLIFICANDO (na mesma ordem):
+        */
+        border: 10px solid rgb(93, 20, 102);    
+
+        /*
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        Nesse caso, como todas as medidas do Padding são iguais, basta colocar 10px uma única vez, como verá abaixo, pois significará que todos os lados tem os mesmos 10px.
+        */
+
+        padding: 10px;
+
+        /*
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 45px;
+        margin-left: 20px;
+        */
+
+        margin: 20px auto 45px auto;
+
+
+       /*
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: rgb(181, 101, 3);
+        */
+
+        outline: 5px dashed orange;
+
+        /* Pra vc colocar as medidas da margem no meio vc utiliza o "margin: auto" "text: center" que ajustará em qualquer tela */
+
+
+        }
+
+        a{ /* inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(228, 12, 128);
+        }
+
+        /* Se um elemento é block e vc quer transformar ele em inline, dá pra fazer com o argumento "display" alterando de uma para outro. */
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funcina.</p>
+</body>
+</html>

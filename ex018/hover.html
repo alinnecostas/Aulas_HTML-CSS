@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+<style>
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    div:hover{
+        color: red;
+    }
+
+    div > p{
+        display: none;
+    }
+
+    div:hover > p{
+        display: block;
+        color: rgb(11, 24, 35);
+        background-color: aquamarine;
+        width: 300px;
+
+        /* Display none e Display block:
+        Display none e display block são valores da propriedade CSS display, que define como um elemento é exibido na página. A diferença entre eles é que:
+
+Display none significa que o elemento não é exibido de forma alguma, ou seja, ele fica invisível e não ocupa espaço. Ele é removido do layout da página inteiramente, como se ele não estivesse lá1.
+Display block significa que o elemento é exibido como um bloco, como parágrafos e cabeçalhos. Um elemento com display block ocupa toda a largura disponível, criando uma nova linha antes e depois dele. Ele também permite definir a largura e a altura do elemento, bem como as margens e os espaçamentos internos2.
+*/
+    }
+</style>
+
+</head>
+<body>
+
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        
+        Passe o mouse aqui!
+        <p>TEXTO ESCONDIDO...</p>
+
+    </div>
+    
+    <p>Fim do exemplo</p>
+
+</body>
+</html>

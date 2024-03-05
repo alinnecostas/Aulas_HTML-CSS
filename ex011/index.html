@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HATML5</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site me vários dispositivos diferentes ou simplesmente aumente e diminua o temanho do seu navegador.</p>
+<!-- Essa tag serve para dimensionar as imagens inseridas, de maneira que não fique com rolagem por conta do tamanho, antes, ele vai se ajustando à tela -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/IMAGEM300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/IMAGEM700.png" type="image/png">
+        <img src="imagens/IMAGEM1000.png" alt="Imagem flexivel">
+    </picture>
+
+    <!-- O elemento picture é um contêiner que fornece múltiplas fontes para seu elemento img contido para permitir que os autores controlem declarativamente ou dêem dicas ao agente do usuário sobre qual recurso de imagem usar, com base na densidade de pixels da tela, tamanho da janela de visualização, formato da imagem e outros fatores. Representa seus filhos.
+    -->
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio src="midia/TwoHearts.mp3" controlS ></audio> <!-- se colocar o "autoplay" depois do controls ele tocará automaticamente, eu tirei pra ele não ficar tocando rs, e "loop" tocará a música do incio assim que acabar-->
+
+<!-- Seu áudio precisa ser compatível com o navegador, temos alguns tipos de arquivos para se usar: MP3, WAV OGG -->
+
+<p> Caso seu navegador não consiga reproduzir audio, torne a experiencia atraves do link do mesmo: </p>
+
+<a href="midia/guanacast-33.mp3">clique aqui para baixar o arquivo MP3</a>
+
+</body>
+</html>

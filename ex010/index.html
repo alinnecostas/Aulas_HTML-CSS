@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links Externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/alinnecostas" target="_blank" rel="external">repositorio publico no GitHub</a></p> <!--rel significa relativo à, target - alvo - e blank - em branco, ou seja, essa tag fará com que seu link abra numa tela nova em branco, ao inves de sobrepor pagina do seu site fazendo com que o usuário saia do site. -->
+    
+    <h1>Usando links Internos</h1>
+    <p>Essa é a primeira pagina do site. Se você quiser, você pode acessar tambem a minha <a href="pag002.html" target="_self">segunda página</a>.</p>
+    <p>Você também pode acessar nossa <a href="notícias/pag003.html" rel="next">página de notícias!</a></p>
+
+    <h1>Links para Download</h1>
+
+    <ul>
+        <li><a href="livro/Ouvidoria Protocolo da manifestação DETRAN - Copia.pdf" download="Ouvidoria Protocolo da manifestação DETRAN - Copia.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/Ouvidoria Protocolo da manifestação DETRAN - Copia.zip" download="Ouvidoria Protocolo da manifestação DETRAN - Copia.pdf" type="application/zip">Livro compactado em zip</a></li> <!-- site para reconhecer qual type usar: https://www.iana.org/assignments/media-types/media-types.xhtml-->
+    </ul>
+</body>
+</html>

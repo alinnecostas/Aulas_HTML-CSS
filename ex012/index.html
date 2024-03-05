@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor. </p>
+
+    <!--Para colocar os vídeos recomenda-se que seja anexados todos os arquivos possíveis, pois, tem servidor que aceita um e outro não, por isso, tenha todos em mãos. Só que não adianta colocar dessa forma (abaixo), assim, só irá empilhar um vídeo em cima de outro. 
+
+    <video src="midia/MeuvideoursoM4V.m4v" width="500" controls></video>
+    <video src="midia/meuvideoursoMP4.mp4" width="500" controls></video> 
+
+    O correto é da forma abaixo descrito:
+-->
+
+<video width="500" poster="imagens/imagemUrso.png" controls autoplay loop>
+    <source src="midia/MeuvideoursoM4V.m4v" type="video/M4V">
+    <source src="midia/meuvideoursoMP4.mp4" type="video/MP4">
+<p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+</video> 
+<!-- SRC: Obrigatório para <audio> e <video>, endereço do recurso de mídia. O valor deste atributo é ignorado quando o elemento <source> é colocado dentro de um elemento <picture>.-->
+ 
+<h1>Inserindo vídeos do Youtube</h1>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/t3WZIL_VwYg?si=aOaAClNDNJahql70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Você obtem o código acima, incorporando no próprio youtube!-->
+
+</body>
+</html>

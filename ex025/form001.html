@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p> <label for="inome">Nome:</label> 
+            <input type="text" name="Nome" id="inome"></p>
+        
+        <p><label for="iSobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p><input type="submit" value="enviar"></p>
+
+        <!-- Ao fazer um formulario normalmente o proprio já completa alguns dados que anteriormente já foram escrito. Caso não queira mais que eles apareçam é só colocar no inicio dessa forma: <form autocomplete="off"> (eu gosto kk então não colocarei)
+            
+        pra fazer a ligação necessária entre o nome e sobrenome com a caixa de escrita, envelopamos esses nomes e abreviamos com o "label" que por sua vez terá o valor daquela-->
+    </form>
+</body>
+</html>

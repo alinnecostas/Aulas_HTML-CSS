@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            position: relative;
+            font-size: 1.5em;
+        }
+
+        td, th {
+            border: 1px solid rgb(12, 24, 4);
+            padding: 10px;
+        }
+
+        caption {
+            background-color: rgb(233, 186, 114);
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: rgb (233, 186, 114);
+        }
+        
+        thead, tfoot {
+            background-color: rgb(171, 244, 165);
+            color: rgb(16, 64, 32);
+        }
+
+        tfoot {
+            background-color: rgb(20, 74, 33);
+            color: rgb(206, 176, 122);
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(95, 225, 192);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(7, 248, 63);
+        }
+
+        p {
+            font-size: 2em;
+            margin: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES 
+
+        TABLE 
+            CAPTION (legenda da tabela)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+                th (usado para cabeçalho)
+    -->
+
+    <table>
+        <caption> POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
+    
+        <thead>           
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col"> População</th>
+                </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> São Paulo </td>
+                <td class="num"> 45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td> São Paulo </td>
+                <td class="num"> 45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td> São Paulo </td>
+                <td class="num"> 45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td> São Paulo </td>
+                <td class="num"> 45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td> São Paulo </td>
+                <td class="num"> 45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td> São Paulo </td>
+                <td class="num"> 45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>168.705.566</strong></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos nemo nihil eaque, repellat reprehenderit ipsam voluptate repudiandae perspiciatis quas, ex maxime commodi amet dolor adipisci, quod doloremque sed fuga.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quidem quia! Culpa, ratione est, iusto neque incidunt aut odit recusandae, nemo quam nostrum reiciendis sed ullam illum? Ut, vero magnam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, expedita. Quaerat consectetur iusto explicabo ducimus at, non, ipsam quibusdam iste atque fugit, totam architecto ratione aut! Ab ullam temporibus corrupti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint in at soluta similique adipisci, voluptatum voluptas esse rerum aliquam voluptatem minus fugit, error laudantium beatae animi, explicabo corrupti molestias.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos nemo nihil eaque, repellat reprehenderit ipsam voluptate repudiandae perspiciatis quas, ex maxime commodi amet dolor adipisci, quod doloremque sed fuga.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quidem quia! Culpa, ratione est, iusto neque incidunt aut odit recusandae, nemo quam nostrum reiciendis sed ullam illum? Ut, vero magnam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, expedita. Quaerat consectetur iusto explicabo ducimus at, non, ipsam quibusdam iste atque fugit, totam architecto ratione aut! Ab ullam temporibus corrupti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint in at soluta similique adipisci, voluptatum voluptas esse rerum aliquam voluptatem minus fugit, error laudantium beatae animi, explicabo corrupti molestias.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos nemo nihil eaque, repellat reprehenderit ipsam voluptate repudiandae perspiciatis quas, ex maxime commodi amet dolor adipisci, quod doloremque sed fuga.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quidem quia! Culpa, ratione est, iusto neque incidunt aut odit recusandae, nemo quam nostrum reiciendis sed ullam illum? Ut, vero magnam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, expedita. Quaerat consectetur iusto explicabo ducimus at, non, ipsam quibusdam iste atque fugit, totam architecto ratione aut! Ab ullam temporibus corrupti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint in at soluta similique adipisci, voluptatum voluptas esse rerum aliquam voluptatem minus fugit, error laudantium beatae animi, explicabo corrupti molestias.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos nemo nihil eaque, repellat reprehenderit ipsam voluptate repudiandae perspiciatis quas, ex maxime commodi amet dolor adipisci, quod doloremque sed fuga.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quidem quia! Culpa, ratione est, iusto neque incidunt aut odit recusandae, nemo quam nostrum reiciendis sed ullam illum? Ut, vero magnam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, expedita. Quaerat consectetur iusto explicabo ducimus at, non, ipsam quibusdam iste atque fugit, totam architecto ratione aut! Ab ullam temporibus corrupti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint in at soluta similique adipisci, voluptatum voluptas esse rerum aliquam voluptatem minus fugit, error laudantium beatae animi, explicabo corrupti molestias.
+    </p>
+    </p>
+
+</body>
+</html>

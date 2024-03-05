@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        }
+
+        a{
+            color: rgb(243, 16, 141);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+          /* Seletores personalizados
+          
+          Pseudo classe ":" 
+          Pseudo elemento "::" 
+
+          relembrando:
+
+          # = id
+          . = class
+          > = children 
+
+        */
+
+        a:visited {
+            color: rgb(47, 45, 167);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow
+        }
+
+       /* a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }  
+        Aqui nós enfatizamos escrevendo que se trata de um link depois da palavra linkada. 
+        
+        */
+        
+        .especial { /* aqui, percebe que utilizamos a mesma ideia das divs.*/
+            background-color: rgb(163, 246, 246);
+        }  
+      
+        .especial::before{
+            content: '↣	';
+        }
+
+        .especial::after{
+            content: ' ↢';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/alinnecostas" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/alinne-costa-3b9813b6/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/repensevc/" target="_blank">Instagram/RepenseVoce</a></li>
+    </ul>
+</body>
+</html>

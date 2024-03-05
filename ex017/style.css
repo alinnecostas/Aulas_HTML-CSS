@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+/* 
+DICA
+em HTML é id = em CSS é #
+en HTML é class = em CSS é .
+
+id vocÊ pode utilizar para formatar seu texto de forma única, como no exemplo anterior, onde apenas 1 tag teve a id "principal"
+
+já na class, você pode ter múltiplas formatações em diferentes tags. 
+*/
+
+body{
+    background-color: #d5b1ff8f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: #4e0fc2;
+    font-weight: initial;
+}
+
+h1#principal{
+    text-align: center;
+    color: #f7d7ff;
+    background-color:#8e04d3;
+}
+
+h2{
+    color: #3e60f7;
+}
+
+.basico{
+color: #0895d2;
+}
+
+.intermediario{
+color: #733589;
+}
+
+.avancado{
+color: #097e92;
+}
+
+.destaque{
+    background-color: #a8ebed;
+}

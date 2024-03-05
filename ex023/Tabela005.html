@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: aquamarine;
+        }
+
+        col.cnome{
+            background-color: aqua;
+        }
+
+       .amarelo{
+            background-color: rgb(237, 237, 122);
+
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Destaque de colunas</h1>
+    
+    <table>
+
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25 anos</td>
+            <td>Dentista</td>
+        </tr>
+        <tr>
+            <td>Luiz</td>
+            <td>Masculino</td>
+            <td>30 anos</td>
+            <td>Pescador</td>
+        </tr>
+
+        <tr>
+            <td>Helen</td>
+            <td>Feminino</td>
+            <td>29 anos</td>
+            <td>Bancário</td>
+        </tr>
+
+        <tr>
+            <td>Breno</td>
+            <td>Masculino</td>
+            <td>22 anos</td>
+            <td>Atleta</td>
+        </tr>
+
+        <tr>
+            <td>Keite</td>
+            <td>Feminino</td>
+            <td>45 anos</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>João</td>
+            <td>Masculino</td>
+            <td>28 anos</td>
+            <td>Jornalista</td>
+        </tr>
+
+    </table>
+</body>
+</html>
